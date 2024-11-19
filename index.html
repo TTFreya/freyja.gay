@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Placeholder</title>
-    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./css/index.css" rel="stylesheet" type="text/css" media="all">
     <center><header>⚠ under construction :3 ⚠ </header></center>
     <script type="text/javascript" src="./scripts/random-select.js"></script>
   </head>
-  <body class="body body1">
+  <img src="./resources/index/landing-bg-top.png" alt="Header Image" style="width: 100%; display: block;">
+  <body>
     <script>
-    const QotD = [ "no place like nowhere", 
+    const QotD = 
+    [ 
+    "no place like nowhere", 
     "god's special robot girl(?) machine thing", 
     "criminally insane faggotry since 2006",
     "feeling good!",
@@ -18,14 +21,22 @@
     "you cannot kill me in any way that matters",
     "stay silly!",
     "my special slice of hell",
-    "working on my fursona :3" ]
+    "present day, present time",
+    "working on my fursona :3" 
+   ]
     const quote = random_select(QotD);
     document.title = quote;
     </script>
-    </body>
-<body class="landing-list">
-    <a href="./pages/home.html"> ~ enter the mayhem <br/> </a>
-    <a href="./pages/about-me.html"> ~ about me <br/> </a>
+
+<div class="image-container">
+  <img src="/resources/landing-bg-bottom.png" alt="Footer Image" class="background-image">
+  <button class="layered-button" style="left: 0%; top: 10%;">enter the mayhem</button>
+  <button class="layered-button" style="left: 0%; top: 450%;">about me</button>
+  <button class="layered-button" style="left: 20%; top: 450%;">git</button>
+  <button class="layered-button" style="left: 20%; top: 900%;">talk to me</button>
+  <button class="layered-button" style="left: 0%; top: 900%;">blog</button>
+  <button class="layered-button" style="left: 20%; top: 10%;">guestbook</button>
+</div>
 </body>
 </div>
 </html>
